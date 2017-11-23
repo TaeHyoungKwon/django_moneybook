@@ -1,1 +1,20 @@
-<h1>Hello World!</h1>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        {% for object in objects%}
+        <ul>
+            <li>{{ object.payment_date }}</li>
+            <li>{{ object.contents }}</li>
+            <li>{{ object.price }}</li>
+            <li>{{ object.category }}</li>
+        </ul>
+        {% endfor %}
+
+        <h1>잔액 : {{ rest }}</h1>
+
+
+    </body>
+</html>

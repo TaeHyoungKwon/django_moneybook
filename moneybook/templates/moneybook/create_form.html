@@ -1,0 +1,12 @@
+<html>
+        <head>
+    
+        </head>
+    
+        <body>
+            <form method="POST" action="" enctype="multipart/form-data"> {% csrf_token %}   
+                {{ form.as_p }}    
+            <button style="font-weight:bold;" type="submit" class="btn btn-success btn-md">글 작성하기</button>
+            </form>
+        </body>
+    </html>
